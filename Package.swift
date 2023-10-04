@@ -22,8 +22,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PayboocOfwModule",
-            url: "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download/v1.1.8/PayboocOfwModule.zip",
-            checksum: "5443ee0ea11f67e0fab4dfa95669f0817d82029c5f39c90d5708c65818809ec6"
+            url: "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download/1.2.0/PayboocOfwModule.zip",
+            checksum: "c11a20401718e3e09110fca8a8fb8b74a902cfe19591c7f24a9ee555813fa326"
         ),
         .target(
             name: "PayboocOfwModuleTarget",
