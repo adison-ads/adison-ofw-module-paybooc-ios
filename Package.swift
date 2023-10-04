@@ -1,12 +1,19 @@
-// swift-tools-version: 5.5
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 5.7
 
 import PackageDescription
 
+let repoURL = "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download"
+let artifactVersion = "1.2.2"
+let artifactName = "PayboocOfwModule.zip"
+let checksum = "5c76db72c4c574fe75bae3adf26372a2aba9f68d848e15e950fd29e974a5c689"
+
+let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
+let offerwallExactVersion = Version("3.1.50")
+
+// MARK: - Do not change.
 let package = Package(
     name: "PayboocOfwModule",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "PayboocOfwModule",
             targets: ["PayboocOfwModule", "PayboocOfwModuleTarget"]
@@ -14,20 +21,20 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "AdisonOfferwallSDK",
-            url: "https://github.com/adison-ads/adison-offerwall-ios-sdk",
-            .upToNextMajor(from: Version("3.1.48"))
+            url: offerwallRepoURL, exact: offerwallExactVersion
         ),
     ],
     targets: [
         .binaryTarget(
             name: "PayboocOfwModule",
-            url: "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download/1.2.0/PayboocOfwModule.zip",
-            checksum: "c11a20401718e3e09110fca8a8fb8b74a902cfe19591c7f24a9ee555813fa326"
+            url: repoURL + "/" + artifactVersion + "/" + artifactName,
+            checksum: checksum
         ),
         .target(
             name: "PayboocOfwModuleTarget",
-            dependencies: ["AdisonOfferwallSDK"],
+            dependencies: [
+                .product(name: "AdisonOfferwallSDK", package: "adison-offerwall-ios-sdk")
+            ],
             path: "Sources"
         )
     ]

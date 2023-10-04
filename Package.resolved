@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/adison-ads/adison-offerwall-ios-sdk",
       "state" : {
-        "revision" : "a39535fdcfa2343b40f84c0fd8cb4dc4597f497a",
-        "version" : "3.1.48"
+        "revision" : "7ea7b36609a65badf21f2908172ba791a5b343bb",
+        "version" : "3.1.50"
       }
     }
   ],
