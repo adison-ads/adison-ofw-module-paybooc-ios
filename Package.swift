@@ -3,9 +3,9 @@
 import PackageDescription
 
 let repoURL = "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download"
-let artifactVersion = "1.2.2"
+let artifactVersion = "1.2.4"
 let artifactName = "PayboocOfwModule.zip"
-let checksum = "5c76db72c4c574fe75bae3adf26372a2aba9f68d848e15e950fd29e974a5c689"
+let checksum = "5697ca0bcd0b4d865ec162a0db497f6ac9d1286b81f9720909e80dff346aa783"
 
 let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
 let offerwallExactVersion = Version("3.1.50")
