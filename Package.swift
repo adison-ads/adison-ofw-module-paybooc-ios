@@ -3,7 +3,7 @@
 import PackageDescription
 
 let repoURL = "https://github.com/adison-ads/adison-ofw-module-paybooc-ios/releases/download"
-let artifactVersion = "1.3.0"
+let artifactVersion = "1.3.0-beta1"
 let artifactName = "PayboocOfwModule.zip"
 let checksum = "7f981c9e01c654ff077f199c40cd87e9a849bd9653b00cee48676a9e1d3c67e1"
 
